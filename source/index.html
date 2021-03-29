@@ -6,7 +6,7 @@
 </head>
 <body class="page-body">
 <header class="page-header">
-  <div class="wrapper">
+  <div class="page-header__wrapper">
     <a class="page-header__logo logo">
       <img src="img/pink-logo--small.svg" width="74" height="23" alt="Логотип приложения Пинк">
     </a>
@@ -15,11 +15,11 @@
     </button>
     <nav class="page-header__nav main-nav">
       <ul class="page-header__link-list link-list">
-        <li class="link-list__item link-list__item--active"><a class="link-list__link link">Главная</a>
+        <li class="link-list__item link-list__item--active"><a class="link-list__link">Главная</a>
         </li>
-        <li class="link-list__item"><a class="link-list__link link" href="#">Фотографии</a></li>
-        <li class="link-list__item"><a class="link-list__link link" href="#">Конкурс</a></li>
-        <li class="link-list__item"><a class="link-list__link link" href="#">Html academy</a></li>
+        <li class="link-list__item"><a class="link-list__link" href="#">Фотографии</a></li>
+        <li class="link-list__item"><a class="link-list__link" href="#">Конкурс</a></li>
+        <li class="link-list__item"><a class="link-list__link" href="#">Html academy</a></li>
       </ul>
     </nav>
   </div>
@@ -33,11 +33,11 @@
         иначе!</p>
       <a href="#" class="button intro__button">Скачать приложение</a>
       <ul class="intro__icon-list icon-list">
-        <li class="icon-list__item"><a href="#" class="icon-list__link link"><span
+        <li class="icon-list__item"><a href="#" class="icon-list__link"><span
           class="visually-hidden">Apple store</span></a></li>
-        <li class="icon-list__item"><a href="#" class="icon-list__link link"><span
+        <li class="icon-list__item"><a href="#" class="icon-list__link"><span
           class="visually-hidden">Android market</span></a></li>
-        <li class="icon-list__item"><a href="#" class="icon-list__link link"><span
+        <li class="icon-list__item"><a href="#" class="icon-list__link"><span
           class="visually-hidden">Windows store</span></a></li>
       </ul>
       <p class="intro__available-list">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -82,7 +82,7 @@
     <div class="wrapper">
       <h2 class="research__title">Эффект на 24 часа!</h2>
       <p class="research__description">Устали от серости мегаполиса?</p>
-      <a href="#" class="research__link link">Узнать больше об исследовании</a>
+      <a href="#" class="research__link">Узнать больше об исследовании</a>
       <img src="#" alt="Картинка с таймером" width="298" height="345">
     </div>
   </section>
@@ -99,11 +99,23 @@
           </blockquote>
         </li>
       </ul>
-      <p class="reviews__slider-toggles slider-toggles">
-        <button class="slider-toggles__toggle slider-toggles__toggle--current" type="button">1</button>
-        <button class="slider-toggles__toggle" type="button">2</button>
-        <button class="slider-toggles__toggle" type="button">3</button>
-      </p>
+      <ul class="reviews__slider-toggles slider-toggles">
+        <li class="slider-toggles__item">
+          <button class="slider-toggles__toggle slider-toggles__toggle--current" type="button">
+            <span class="visually-hidden">Слайд 1</span>
+          </button>
+        </li>
+        <li class="slider-toggles__item">
+          <button class="slider-toggles__toggle" type="button">
+            <span class="visually-hidden">Слайд 2</span>
+          </button>
+        </li>
+        <li class="slider-toggles__item">
+          <button class="slider-toggles__toggle" type="button">
+            <span class="visually-hidden">Слайд 3</span>
+          </button>
+        </li>
+      </ul>
     </div>
   </section>
   <section class="tariffs">
@@ -114,15 +126,15 @@
           <th class="tariffs-table__header-cell tariffs-table__header-cell--empty">
           </th>
           <th class="tariffs-table__header-cell">
-            <h3 class="tariffs-table__tariff-title">База</h3>
+            <p class="tariffs-table__tariff-title">База</p>
             <p class="tariffs-table__tariff-price">1,99 USD</p>
           </th>
           <th class="tariffs-table__header-cell tariffs-table__header-cell--hit" data-hit-text="Хит">
-            <h3 class="tariffs-table__tariff-title">Стандарт</h3>
+            <p class="tariffs-table__tariff-title">Стандарт</p>
             <p class="tariffs-table__tariff-price">3,99 USD</p>
           </th>
           <th class="tariffs-table__header-cell">
-            <h3 class="tariffs-table__tariff-title">Анлим</h3>
+            <p class="tariffs-table__tariff-title">Анлим</p>
             <p class="tariffs-table__tariff-price">9,99 USD</p>
           </th>
         </tr>
@@ -202,19 +214,31 @@
           </td>
         </tr>
       </table>
-      <p class="tariffs-slider__slider-toggles slider-toggles">
-        <button class="slider-toggles__toggle slider-toggles__toggle--current" type="button">1</button>
-        <button class="slider-toggles__toggle" type="button">2</button>
-        <button class="slider-toggles__toggle" type="button">3</button>
-      </p>
+
+      <ul class="tariffs-slider__slider-toggles slider-toggles">
+        <li class="slider-toggles__item">
+          <button class="slider-toggles__toggle slider-toggles__toggle--current" type="button">
+            <span class="visually-hidden">Слайд 1</span>
+          </button>
+        </li>
+        <li class="slider-toggles__item">
+          <button class="slider-toggles__toggle" type="button">
+            <span class="visually-hidden">Слайд 2</span>
+          </button>
+        </li>
+        <li class="slider-toggles__item">
+          <button class="slider-toggles__toggle" type="button">
+            <span class="visually-hidden">Слайд 3</span>
+          </button>
+        </li>
+      </ul>
     </div>
   </section>
-</main>
-<footer class="page-footer">
+
   <section class="contacts">
     <h2 class="visually-hidden">Наши контакты</h2>
     <div class="wrapper">
-      <p class="contacts__intro-text">Остались вопросы? </br>
+      <p class="contacts__intro-text">Остались вопросы? <br>
         Свяжитесь с нами!</p>
       <dl class="contacts__list">
         <div class="contacts__item">
@@ -238,24 +262,26 @@
             Приезжайте в гости:
           </dt>
           <dd class="contacts__value">
-            <address class="contacts__address">ул. Большая </br> Конюшенная, 19/8</address>
+            <p class="contacts__address">ул. Большая <br> Конюшенная, 19/8</p>
           </dd>
         </div>
       </dl>
     </div>
     <img src="img/map.png" width="320" height="200" alt="ул. Большая Конюшенная, 19/8">
   </section>
-  <div class="wrapper">
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
     <a class="page-footer__logo logo logo--accent">
       <img src="img/logo-with-glasses.svg" width="145" height="40" alt="Логотип приложения Пинк">
     </a>
-
     <ul class="page-footer__social-list social-list">
       <li class="social-list__item">
         <a class="social-list__link social-list__link--twitter" href="https://twitter.com">Мы в твиттере</a>
       </li>
       <li class="social-list__item">
-        <a class="social__link social__link--facebook" href="https://www.facebook.com">Мы в Фейсбуке</a>
+        <a class="social-list__link social-list__link--facebook" href="https://www.facebook.com">Мы в Фейсбуке</a>
       </li>
       <li class="social-list__item">
         <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com">Наши видосики</a>
