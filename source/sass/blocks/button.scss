@@ -1,0 +1,32 @@
+.button {
+  @include default-link;
+  display: block;
+  border: none;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+  color: $white;
+
+  &--rounded {
+    padding: 15px;
+    border: 3px solid $white;
+    border-radius: 30px;
+    line-height: 18px;
+    background-color: transparent;
+
+    @media (min-width: $desktop-width) {
+      font-size: 21px;
+    }
+  }
+
+  &--rounded:hover {
+    color: $pink;
+    background-color: $white;
+  }
+
+  &--rounded:active {
+    color: rgba($pink, 0.3);
+  }
+}

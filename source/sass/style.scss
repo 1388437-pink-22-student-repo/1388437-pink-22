@@ -1,1 +1,26 @@
-// Начните писать стили здесь
+@import "global/variables";
+@import "global/fonts";
+@import "global/mixins";
+@import "global/common";
+@import "blocks/button";
+@import "blocks/contacts";
+@import "blocks/copyright";
+@import "blocks/slider-toggles";
+@import "blocks/slider";
+@import "blocks/features";
+@import "blocks/icon-list";
+@import "blocks/intro";
+@import "blocks/link-list";
+@import "blocks/logo";
+@import "blocks/main-nav";
+@import "blocks/page";
+@import "blocks/page-body";
+@import "blocks/page-header";
+@import "blocks/page-main";
+@import "blocks/research";
+@import "blocks/review";
+@import "blocks/social-list";
+@import "blocks/tariffs";
+@import "blocks/tariffs-table";
+@import "blocks/page-footer";
+@import "blocks/wrapper";

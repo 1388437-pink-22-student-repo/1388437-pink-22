@@ -1,0 +1,27 @@
+.page-header {
+  position: relative;
+  color: $white;
+  min-height: 69px;
+  background-color: $darkblue;
+  background-image: url("../img/bg-intro--mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/bg-intro--tablet.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-intro--desktop.jpg");
+    background-position: 50% 0;
+    background-size: 2560px 853px;
+  }
+
+  &--opened {
+    background-position: 50% 335px;
+  }
+}
+
+.page-header__nav-wrapper {
+  background-color: rgba($black, 0.3);
+}

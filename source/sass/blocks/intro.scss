@@ -1,0 +1,80 @@
+.intro {
+  background-image: url("../img/hand-with-phone--mobile.png");
+  background-position: 0 106px;
+  background-repeat: no-repeat;
+  padding-top: 29px;
+  padding-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 93px;
+    padding-bottom: 110px;
+    background-image: url("../img/hand-with-phone--tablet.png");
+    background-position: -20px 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 108px 10px 122px;
+    max-width: 940px;
+    background-image: url("../img/hand-with-phone--desktop.png");
+    background-position: 26px 99px;
+    margin: 0 auto;
+  }
+}
+
+.intro__wrapper {
+  @include wrapper;
+
+  @media (min-width: $tablet-width) {
+    max-width: 340px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+.intro__slogan {
+  @include default-paragraph;
+  font-weight: 300;
+  line-height: 1.2;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 348px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+    padding: 0 30px;
+    font-size: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+    font-size: 50px;
+    line-height: 1;
+  }
+}
+
+.intro__icon-list {
+  margin-top: 32px;
+  margin-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 67px;
+    margin-bottom: 56px;
+  }
+}
+
+.intro__available-list {
+  @include default-paragraph;
+  text-align: center;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}

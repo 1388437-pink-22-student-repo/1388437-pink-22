@@ -1,0 +1,31 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $darkblue;
+  margin-right: 16px;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 14px;
+  }
+}
+
+.copyright__link {
+  display: block;
+  width: 27px;
+  height: 34px;
+
+  &:hover path {
+    fill: $darkblue;
+  }
+
+  &:active path {
+    fill: rgba($darkblue, 0.3);
+  }
+}

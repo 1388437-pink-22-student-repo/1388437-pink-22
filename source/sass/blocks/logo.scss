@@ -1,0 +1,58 @@
+.logo {
+  display: block;
+  width: 74px;
+  height: 23px;
+  color: $darkblue;
+
+  &--accent {
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 147px;
+    height: 40px;
+  }
+
+  &[href]:hover {
+
+    cursor: pointer;
+
+    path {
+      fill: $pink;
+    }
+  }
+
+  &[href]:active path {
+    opacity: 0.3;
+  }
+}
+
+.logo__logo-mobile {
+  display: block;
+
+  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.logo__logo-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.logo__logo-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
