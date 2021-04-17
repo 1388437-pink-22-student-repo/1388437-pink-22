@@ -6,10 +6,6 @@
   @include default-list;
 }
 
-.reviews__item {
-
-}
-
 .reviews__blockquote {
   margin: 0;
   padding-top: 40px;
@@ -100,7 +96,6 @@
 }
 
 .reviews__slider-toggles {
-
   @media (min-width: $desktop-width) {
     display: none;
   }

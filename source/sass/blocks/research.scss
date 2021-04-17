@@ -58,7 +58,7 @@
   color: $black;
   width: 168px;
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     line-height: 1;
     width: 100%;
   }
@@ -71,7 +71,7 @@
   font-weight: 400;
   line-height: 1.7;
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     font-size: 18px;
     margin-top: 30px;
     margin-bottom: 40px;
@@ -84,7 +84,7 @@
   line-height: 1.7;
   color: $pink;
 
-  @media (min-width: $desktop-width){
+  @media (min-width: $desktop-width) {
     font-size: 18px;
   }
 }
