@@ -1,0 +1,28 @@
+@mixin default-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin default-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@mixin default-paragraph {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin wrapper {
+  margin: 0 auto;
+  min-width: $mobile-width;
+  max-width: 940px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

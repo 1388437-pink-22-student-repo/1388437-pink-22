@@ -1,0 +1,62 @@
+.link-list {
+  @include default-list;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 622px;
+  }
+}
+
+.link-list__item {
+  position: relative;
+  border-bottom: 1px solid $black;
+  border-top: 1px solid rgba($white, 0.15);
+
+  @media (min-width: $desktop-width) {
+    border: none;
+  }
+}
+
+.link-list__link {
+  @include default-link;
+
+  display: block;
+  padding: 25px 0;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 32px;
+  font-weight: 700;
+
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    font-weight: 400;
+    text-transform: none;
+  }
+
+  &[href]:hover {
+    color: $pink;
+  }
+
+  &[href]:active {
+    color: rgba($pink, 0.3);
+
+    @media (min-width: $desktop-width) {
+      color: rgba($white, 0.3);
+    }
+  }
+
+  &:not([href])::after {
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      bottom: -9px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: $white;
+    }
+  }
+}
