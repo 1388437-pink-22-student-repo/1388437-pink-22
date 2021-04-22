@@ -1,0 +1,86 @@
+.field {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    &--icon-phone::after,
+    &--icon-email::after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      width: 60px;
+      height: 59px;
+      background-color: $lightgray;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--icon-phone::after {
+      background-image: url("../img/icon-phone.svg");
+    }
+
+    &--icon-email::after {
+      background-image: url("../img/icon-mail.svg");
+    }
+  }
+
+  &--contacts {
+    flex-direction: column;
+
+    .field__label {
+      @media (min-width: $tablet-width) {
+        order: 1;
+        margin-top: 10px;
+        margin-left: 19px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+      width: 375px;
+    }
+  }
+
+  &--personality {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.field__label {
+  display: block;
+  font-size: 14px;
+  line-height: 2.15;
+  color: $pink;
+  text-transform: uppercase;
+  margin-left: 22px;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-right: 18px;
+  }
+}
+
+.field__input {
+  display: block;
+  width: 100%;
+  border: 2px solid $lightgray;
+  border-radius: 2px;
+  padding: 14px 20px 15px;
+  min-height: 63px;
+  font-size: 18px;
+  line-height: 1.7;
+
+  &:hover {
+    border-color: $darkblue;
+  }
+
+  &:focus {
+    outline: 0;
+    border-color: $pink;
+  }
+}

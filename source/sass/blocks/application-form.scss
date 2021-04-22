@@ -1,0 +1,33 @@
+.application-form {
+  padding-top: 45px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 90px;
+  }
+}
+
+
+.application-form__intro {
+  @include default-paragraph;
+  @include wrapper;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.15;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 1.7;
+    padding: 0 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 70px;
+  }
+}
+
+@media (max-width: $mobile-only-width) {
+  .mobile-hidden {
+    display: none;
+  }
+}

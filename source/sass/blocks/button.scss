@@ -29,4 +29,26 @@
   &--rounded:active {
     color: rgba($pink, 0.3);
   }
+
+  &--success {
+    padding: 16px 15px;
+    width: 100%;
+    border-radius: 2px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $green;
+  }
+
+  &--success:hover {
+    background-color: $darkgreen;
+  }
+
+  &--success:active {
+    color: rgba($white, 0.3);
+  }
+
+  &[disabled] {
+    background-color: $lightgray;
+  }
 }
