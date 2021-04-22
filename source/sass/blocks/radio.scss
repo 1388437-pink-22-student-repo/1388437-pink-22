@@ -1,0 +1,81 @@
+$radio-size: 35px;
+
+.radio {
+
+}
+
+.radio__input {
+  @include visually-hidden;
+
+  &:focus + .radio__label {
+    outline: 1px dashed $pink;
+    outline-offset: 2px;
+  }
+
+  &:checked + .radio__label {
+    &::after {
+      content: "";
+    }
+  }
+
+  &:disabled + .radio__label {
+    &::before {
+      border-color: rgba($lightgray, 0.5);
+    }
+
+    &::after {
+      background-color: rgba($lightgray, 0.5);
+    }
+  }
+}
+
+.radio__label {
+
+  position: relative;
+  display: block;
+  padding-left: 69px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  font-size: 18px;
+  line-height: 30px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 59px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: $radio-size;
+    height: $radio-size;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $lightgray;
+    border-radius: 50%;
+    background-color: $white;
+  }
+
+  &::after {
+    content: none;
+    position: absolute;
+    left: $radio-size;
+    top: 50%;
+    width: 14px;
+    height: 14px;
+    transform: translate(calc(-50% - #{$radio-size} / 2), -50%);
+    border-radius: 50%;
+    background-color: $pink;
+  }
+
+  &:hover::before {
+    border-color: $darkblue;
+  }
+
+  &:active::before {
+    border-color: $pink;
+  }
+}
