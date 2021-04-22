@@ -51,14 +51,14 @@
     flex-direction: column;
     gap: 17px;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       padding-top: 46px;
       padding-bottom: 26px;
       padding-right: 58px;
       padding-left: 58px;
     }
 
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       flex-direction: row;
       justify-content: space-between;
       padding-top: 43px;
@@ -68,7 +68,7 @@
     .fields-group__legend {
       display: none;
 
-      @media(min-width: $tablet-width) {
+      @media (min-width: $tablet-width) {
         display: block;
       }
     }
@@ -81,14 +81,14 @@
     padding-top: 34px;
     padding-bottom: 34px;
 
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       padding-top: 52px;
       padding-bottom: 55px;
       padding-right: 58px;
       padding-left: 58px;
     }
 
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       padding-top: 54px;
       padding-bottom: 56px;
       padding-right: 50px;
@@ -97,14 +97,14 @@
   }
 
   &--emotions {
-    @media(min-width: $tablet-width) {
+    @media (min-width: $tablet-width) {
       padding-top: 46px;
       padding-bottom: 51px;
       padding-right: 58px;
       padding-left: 58px;
     }
 
-    @media(min-width: $desktop-width) {
+    @media (min-width: $desktop-width) {
       padding-top: 43px;
       padding-bottom: 43px;
     }
@@ -119,7 +119,7 @@
   text-transform: uppercase;
   text-align: center;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     position: absolute;
     z-index: 5;
     left: 50%;
