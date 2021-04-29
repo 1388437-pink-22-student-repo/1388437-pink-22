@@ -1,23 +1,38 @@
 .intro {
-  background-image: url("../img/hand-with-phone--mobile.png");
+  background-image: url("../img/phone-hand-mobile@1x.png");
   background-position: 0 106px;
   background-repeat: no-repeat;
   padding-top: 29px;
   padding-bottom: 38px;
 
+  @media (min-resolution: $retina-dpi) {
+    background-size: 258px 286px;
+    background-image: url("../img/phone-hand-mobile@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 93px;
     padding-bottom: 110px;
-    background-image: url("../img/hand-with-phone--tablet.png");
+    background-image: url("../img/phone-hand-tablet@1x.png");
     background-position: -20px 74px;
+
+    @media (min-resolution: $retina-dpi) {
+      background-size: 700px 545px;
+      background-image: url("../img/phone-hand-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 108px 10px 122px;
     max-width: 940px;
-    background-image: url("../img/hand-with-phone--desktop.png");
+    background-image: url("../img/phone-hand-desktop@1x.png");
     background-position: 26px 99px;
     margin: 0 auto;
+
+    @media (min-resolution: $retina-dpi) {
+      background-size: 1050px 645px;
+      background-image: url("../img/phone-hand-desktop@2x.png");
+    }
   }
 }
 

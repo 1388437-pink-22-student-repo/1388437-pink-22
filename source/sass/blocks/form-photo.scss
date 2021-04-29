@@ -1,0 +1,103 @@
+.form-photo {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 940px;
+  background-color: $silver;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-auto-rows: min-content;
+    grid-template-areas:
+      "image controls"
+      "image buttons";
+    grid-column-gap: 47px;
+    grid-row-gap: 27px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 300px 410px;
+    grid-column-gap: 90px;
+    grid-row-gap: 27px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+  }
+}
+
+.form-photo__image-label {
+  display: block;
+  width: 280px;
+  height: 374px;
+  background-image: url("../img/photo-road-mobile@1x.jpg");
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  margin-bottom: 42px;
+
+  @media (min-resolution: $retina-dpi) {
+    background-image: url("../img/photo-road-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-area: image;
+    width: 300px;
+    height: 400px;
+    margin-top: 16px;
+    background-image: url("../img/photo-road-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi) {
+      background-image: url("../img/photo-road-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    background-image: url("../img/photo-road-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi) {
+      background-image: url("../img/photo-road-desktop@2x.jpg");
+    }
+  }
+}
+
+.form-photo__filter-toggle {
+
+  margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.form-photo__controls {
+  grid-area: controls;
+  margin-bottom: 25px;
+}
+
+.form-photo__buttons {
+  grid-area: buttons;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 44px;
+    align-items: flex-start;
+    padding-top: 75px;
+  }
+}
+
+.form-photo__button {
+  margin-bottom: 13px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+    width: 260px;
+  }
+}

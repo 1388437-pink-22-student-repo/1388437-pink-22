@@ -1,0 +1,125 @@
+.photo-controls {
+  @include default-list;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.photo-controls__item {
+  position: relative;
+  display: none;
+  padding-bottom: 34px;
+
+  &--current {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    gap: 29px;
+    color: $pink;
+    height: 72px;
+    padding: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    padding-right: 10px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: calc((100% - 100vw) / 2);
+    bottom: 0;
+    width: 100vw;
+    height: 1px;
+    background-color: rgba($darkblue, 0.1);
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+
+.photo-controls__range {
+  height: 2px;
+  background-color: $darkblue;
+
+  @media (min-width: $tablet-width) {
+    width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+  }
+}
+
+.photo-controls__thumb {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 1px;
+  transform: translateY(-50%);
+  background-color: $white;
+  border: 2px solid $pink;
+  border-radius: 50%;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    top: 50%;
+  }
+
+  &--crop {
+    left: 84%;
+  }
+
+  &--fill {
+    left: 30%;
+
+    @media (min-width: $desktop-width) {
+      left: 33%;
+    }
+  }
+
+  &--contrast {
+    left: 58%;
+
+    @media (min-width: $desktop-width) {
+      left: 59%;
+    }
+  }
+
+  &:active,
+  &:focus {
+    background-color: $pink;
+  }
+}
+
+.photo-controls__icon {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+
+    &--crop {
+      height: 44px;
+    }
+
+    &--fill {
+      height: 43px;
+    }
+
+    &--contrast {
+      height: 32px;
+    }
+  }
+}

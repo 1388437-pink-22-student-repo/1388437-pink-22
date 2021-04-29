@@ -67,10 +67,15 @@
     bottom: 0;
     left: 50vw;
     transform: translateX(-50%);
-    background-image: url("../img/phone-screen-3-mobile.png");
+    background-image: url("../img/phone-screen-3-mobile@1x.png");
     background-repeat: no-repeat;
     min-width: 157px;
     min-height: 277px;
+
+    @media (min-resolution: $retina-dpi) {
+      background-size: cover;
+      background-image: url("../img/phone-screen-3-mobile@2x.png");
+    }
 
     @media (min-width: $tablet-width) {
       top: 0;
@@ -78,7 +83,11 @@
       min-width: 268px;
       min-height: 481px;
       transform: none;
-      background-image: url("../img/phone-screen-3-tablet.png");
+      background-image: url("../img/phone-screen-3-tablet@1x.png");
+
+      @media (min-resolution: $retina-dpi) {
+        background-image: url("../img/phone-screen-3-tablet@2x.png");
+      }
     }
 
     @media (min-width: $desktop-width) {
@@ -116,15 +125,30 @@
   }
 
   .features__item-1::before {
-    background-image: url("../img/phone-screen-1-desktop.png");
+    background-image: url("../img/phone-screen-1-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi) {
+      background-size: cover;
+      background-image: url("../img/phone-screen-1-desktop@2x.png");
+    }
   }
 
   .features__item-2::before {
-    background-image: url("../img/phone-screen-2-desktop.png");
+    background-image: url("../img/phone-screen-2-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi) {
+      background-size: cover;
+      background-image: url("../img/phone-screen-2-desktop@2x.png");
+    }
   }
 
   .features__item-3::before {
-    background-image: url("../img/phone-screen-3-desktop.png");
+    background-image: url("../img/phone-screen-3-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi) {
+      background-size: cover;
+      background-image: url("../img/phone-screen-3-desktop@2x.png");
+    }
   }
 }
 

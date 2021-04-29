@@ -1,0 +1,20 @@
+.photo-editor {
+  padding-top: 45px;
+}
+
+.photo-editor__intro {
+  @include default-paragraph;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-weight: 400;
+  line-height: 2.15;
+  text-align: center;
+
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 70px;
+  }
+}

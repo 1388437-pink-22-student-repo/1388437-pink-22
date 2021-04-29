@@ -7,13 +7,23 @@
 }
 
 .icon-list__link {
-  display: flex;
+  @include default-link;
+  display: block;
   margin-top: auto;
   width: 47px;
   height: 56px;
-}
+  background-repeat: no-repeat;
+  background-position: center center;
 
-.icon-list__icon {
-  display: block;
-  margin-top: auto;
+  &--apple {
+    background-image: url('../img/icon-apple-logo.svg');
+  }
+
+  &--android {
+    background-image: url('../img/icon-android-logo.svg');
+  }
+
+  &--windows {
+    background-image: url('../img/icon-microsoft-logo.svg');
+  }
 }

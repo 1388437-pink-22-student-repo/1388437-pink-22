@@ -1,0 +1,224 @@
+.user-gallery-item {
+  margin-bottom: 20px;
+
+  &--panorama {
+    @media (min-width: $tablet-width) {
+      grid-column: 1/3;
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column: 1/4;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(3n+2) {
+      justify-self: end;
+      margin-right: 20px;
+    }
+
+    &:nth-child(3n+4) {
+      justify-self: start;
+      margin-left: 20px;
+    }
+  }
+}
+
+.user-gallery-item__photo-link {
+  @include default-link;
+  margin: 0 auto;
+  display: block;
+  overflow: hidden;
+  width: 280px;
+  height: 180px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    height: 400px;
+  }
+
+  &--panorama {
+    position: relative;
+    width: 320px;
+    height: 137px;
+
+    @media (min-width: $tablet-width) {
+      width: 660px;
+      height: 509px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1200px;
+      height: 506px;
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 20px;
+      content: attr(data-panorama);
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 36px;
+      text-transform: uppercase;
+      color: $white;
+      text-align: center;
+      background-color: $pink;
+      width: 140px;
+      height: 36px;
+
+      @media (min-width: $tablet-width) {
+        top: 57px;
+      }
+
+      @media (min-width: $desktop-width) {
+        top: 55px;
+        right: 130px;
+      }
+    }
+  }
+}
+
+.user-gallery-item__img {
+  display: block;
+}
+
+.user-gallery-item__comment {
+  margin: 0 auto;
+  padding: 20px 20px;
+  background-color: $silver;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 32px 24px 27px;
+    width: 300px;
+  }
+
+  &--panorama {
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 24px 29px 25px 30px;
+      width: 620px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 30px;
+      padding-left: 28px;
+      padding-top: 25px;
+      padding-bottom: 0;
+      width: 940px;
+    }
+  }
+}
+
+.user-gallery-item__comment-author {
+  @include default-paragraph;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.user-gallery-item__comment-date {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 2;
+  text-transform: uppercase;
+}
+
+.user-gallery-item__comment-text {
+  @include default-paragraph;
+  font-size: 14px;
+  line-height: 1.7;
+
+  &--panorama {
+    order: 2;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 50px;
+    padding-bottom: 10px;
+  }
+}
+
+.user-gallery-item__comment-likes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+
+  &--panorama {
+    order: 1;
+  }
+}
+
+.user-gallery-item__comment-like-button {
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  font: initial;
+  color: $pink;
+
+  &:focus {
+    outline: 1px dashed $pink;
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    color: $darkblue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.user-gallery--comment-likes-counter {
+  @include default-paragraph;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  text-transform: uppercase;
+  color: $pink;
+
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+}
+
+.user-gallery-item__comment-like {
+  .user-gallery-item__empty-heart {
+    display: block;
+  }
+
+  .user-gallery-item__filled-heart {
+    display: none;
+  }
+
+  &--liked {
+    .user-gallery-item__empty-heart {
+      display: none;
+    }
+
+    .user-gallery-item__filled-heart {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.users-gallery {
+  padding-top: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 90px;
+  }
+}
+
+.users-gallery__intro {
+  @include default-paragraph;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2.15;
+  text-align: center;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 500px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 650px;
+  }
+}
+
+.users-gallery__list {
+  @include default-list;
+  padding-top: 60px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr min-content 1fr;
+    padding-top: 90px;
+  }
+}
