@@ -38,7 +38,7 @@
           </button>
         </div>
         <ul class="main-nav__link-list link-list">
-          <li class="link-list__item link-list__item--active">
+          <li class="link-list__item link-list__link--active">
             <a class="link-list__link">Главная</a>
           </li>
           <li class="link-list__item">
@@ -315,11 +315,11 @@
 
           <source media="(min-width: 960px)" srcset="img/content/map-desktop@1x.jpg 1x, img/content/map-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/content/map-tablet@1x.jpg 1x, img/content/map-tablet@2x.jpg 2x">
-          <img class="map__image" src="img/content/map-mobile@1x.jpg" srcset="img/content/map-mobile@2x.jpg 2x" width="320" height="200" alt="ул. Большая Конюшенная, 19/8">
+          <img class="contacts__map-image" src="img/content/map-mobile@1x.jpg" srcset="img/content/map-mobile@2x.jpg 2x" width="320" height="200" alt="ул. Большая Конюшенная, 19/8">
         </picture>
 
-        <div class="map__marker"></div>
-        <div class="map__interactive" id="map"></div>
+        <div class="contacts__map-marker"></div>
+        <div class="contacts__map-interactive" id="map"></div>
       </div>
     </section>
   </main>
@@ -365,7 +365,7 @@
       </div>
     </div>
   </footer>
-  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&onload=init"></script>
   <script src="js/index.min.js"></script>
 </body>
 </html>

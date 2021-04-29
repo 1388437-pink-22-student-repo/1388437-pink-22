@@ -16,14 +16,14 @@
   background-position: center center;
 
   &--apple {
-    background-image: url('../img/icon-apple-logo.svg');
+    background-image: url("../img/icon-apple-logo.svg");
   }
 
   &--android {
-    background-image: url('../img/icon-android-logo.svg');
+    background-image: url("../img/icon-android-logo.svg");
   }
 
   &--windows {
-    background-image: url('../img/icon-microsoft-logo.svg');
+    background-image: url("../img/icon-microsoft-logo.svg");
   }
 }

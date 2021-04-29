@@ -1,5 +1,3 @@
-ymaps.ready(init);
-
 function init(ymaps) {
 
   const map = new ymaps.Map('map', {

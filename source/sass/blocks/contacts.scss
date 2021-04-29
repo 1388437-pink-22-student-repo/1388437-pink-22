@@ -113,7 +113,7 @@
   }
 }
 
-.map__image {
+.contacts__map-image {
   position: absolute;
   top: -222%;
   left: 50%;
@@ -131,7 +131,7 @@
   }
 }
 
-.map__marker {
+.contacts__map-marker {
   position: absolute;
   z-index: 1;
   left: 50%;
@@ -144,7 +144,7 @@
   background-repeat: no-repeat;
 }
 
-.map__interactive {
+.contacts__map-interactive {
   position: absolute;
   z-index: 10;
   top: 0;
