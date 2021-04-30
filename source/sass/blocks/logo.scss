@@ -2,11 +2,12 @@
   display: block;
   width: 74px;
   height: 23px;
-  color: $darkblue;
+  color: $white;
 
   &--accent {
     width: 145px;
     height: 40px;
+    color: $darkblue;
   }
 
   @media (min-width: $tablet-width) {
@@ -20,15 +21,10 @@
   }
 
   &[href]:hover {
-
-    cursor: pointer;
-
-    path {
-      fill: $pink;
-    }
+    color: $pink;
   }
 
-  &[href]:active path {
+  &[href]:active {
     opacity: 0.3;
   }
 }
@@ -36,7 +32,7 @@
 .logo__logo-mobile {
   display: block;
 
-  @media (min-width: $tablet-width), (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
@@ -46,6 +42,10 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }
 

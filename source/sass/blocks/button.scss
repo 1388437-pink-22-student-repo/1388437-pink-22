@@ -51,4 +51,39 @@
   &[disabled] {
     background-color: $lightgray;
   }
+
+  &--no-accent {
+    font-size: 18px;
+    line-height: 1;
+    border-color: rgba($darkblue, 0.1);
+    color: rgba($darkblue, 0.1);
+  }
+
+  &--no-accent:hover {
+    border-color: rgba($darkblue, 0.3);
+    color: rgba($darkblue, 0.3);
+  }
+
+  &--no-accent:active {
+    color: rgba($white, 0.3);
+    background-color: rgba($darkblue, 0.3);
+    border-color: rgba($darkblue, 0);
+  }
+
+  &--accent {
+    font-size: 18px;
+    line-height: 1;
+    border-color: $pink;
+    color: $pink;
+  }
+
+  &--accent:hover {
+    color: $white;
+    background-color: $pink;
+  }
+
+  &--accent:active {
+    color: rgba($white, 0.3);
+    background-color: $pink;
+  }
 }

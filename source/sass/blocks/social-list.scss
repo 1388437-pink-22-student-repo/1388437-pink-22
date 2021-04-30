@@ -12,11 +12,13 @@
 
 .social-list__link {
   @include default-link;
-  display: flex;
+  display: block;
   width: 54px;
   height: 54px;
   border: 3px solid rgba($darkblue, 0.1);
   border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
 
   &:hover {
     border-color: $darkblue;
@@ -25,10 +27,16 @@
   &:active {
     opacity: 0.3;
   }
-}
 
-.social-list__icon {
-  display: block;
-  margin: auto;
-  fill: $pink;
+  &--twitter {
+    background-image: url("../img/icon-twitter.svg");
+  }
+
+  &--facebook {
+    background-image: url("../img/icon-facebook.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/icon-youtube.svg");
+  }
 }

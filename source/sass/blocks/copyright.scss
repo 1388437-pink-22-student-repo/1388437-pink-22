@@ -20,12 +20,13 @@
   display: block;
   width: 27px;
   height: 34px;
+  color: $pink;
 
-  &:hover path {
-    fill: $darkblue;
+  &:hover {
+    color: $darkblue;
   }
 
-  &:active path {
-    fill: rgba($darkblue, 0.3);
+  &:active {
+    color: rgba($darkblue, 0.3);
   }
 }
