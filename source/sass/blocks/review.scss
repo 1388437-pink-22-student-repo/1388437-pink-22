@@ -14,7 +14,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    padding-top: 100px;
+    padding-top: 95px;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,6 +53,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 3px;
     font-size: 24px;
     line-height: 1.25;
   }

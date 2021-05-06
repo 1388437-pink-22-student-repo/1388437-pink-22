@@ -9,11 +9,10 @@
 .icon-list__link {
   @include default-link;
   display: block;
-  margin-top: auto;
   width: 47px;
   height: 56px;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center bottom;
 
   &--apple {
     background-image: url("../img/icon-apple-logo.svg");

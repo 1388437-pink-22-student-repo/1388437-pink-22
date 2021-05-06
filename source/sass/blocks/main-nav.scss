@@ -1,18 +1,17 @@
 .main-nav {
-  max-width: $desktop-width;
   margin: auto;
-}
 
-@media (min-width: $desktop-width) {
-  .main-nav {
+  @media (min-width: $desktop-width) {
+    max-width: 940px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    max-width: 940px;
   }
+}
 
-  .main-nav__menu-toggle {
+.main-nav__menu-toggle {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
@@ -21,14 +20,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 21px;
-  padding-bottom: 21px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
 
   @media (min-width: $tablet-width) {
     padding-top: 27px;
     padding-bottom: 43px;
+    align-items: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
   }
 }
 

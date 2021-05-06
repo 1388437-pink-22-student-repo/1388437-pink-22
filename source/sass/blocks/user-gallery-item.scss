@@ -1,5 +1,33 @@
 .user-gallery-item {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) and (max-width: $exclude-desktop-width) {
+    margin-bottom: 18px;
+
+    &:nth-child(2n+2) {
+      justify-self: end;
+      margin-right: 10px;
+    }
+
+    &:nth-child(2n+3) {
+      justify-self: start;
+      margin-left: 10px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 53px;
+
+    &:nth-child(3n+2) {
+      justify-self: end;
+      margin-right: 20px;
+    }
+
+    &:nth-child(3n+4) {
+      justify-self: start;
+      margin-left: 20px;
+    }
+  }
 
   &--panorama {
     @media (min-width: $tablet-width) {
@@ -9,18 +37,6 @@
 
     @media (min-width: $desktop-width) {
       grid-column: 1/4;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    &:nth-child(3n+2) {
-      justify-self: end;
-      margin-right: 20px;
-    }
-
-    &:nth-child(3n+4) {
-      justify-self: start;
-      margin-left: 20px;
     }
   }
 }
@@ -91,13 +107,17 @@
 
 .user-gallery-item__comment {
   margin: 0 auto;
-  padding: 20px 20px;
+  padding: 18px 10px 21px 17px;
   background-color: $silver;
   width: 280px;
 
   @media (min-width: $tablet-width) {
-    padding: 23px 32px 24px 27px;
+    padding: 22px 29px 24px 30px;
     width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 24px 29px 24px 27px;
   }
 
   &--panorama {
@@ -105,15 +125,12 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      padding: 24px 29px 25px 30px;
+      padding: 24px 29px 10px 30px;
       width: 620px;
     }
 
     @media (min-width: $desktop-width) {
-      padding-right: 30px;
-      padding-left: 28px;
-      padding-top: 25px;
-      padding-bottom: 0;
+      padding: 23px 30px 0 28px;
       width: 940px;
     }
   }
@@ -124,11 +141,6 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.7;
-  margin-bottom: 10px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-  }
 }
 
 .user-gallery-item__comment-date {
@@ -142,10 +154,7 @@
   @include default-paragraph;
   font-size: 14px;
   line-height: 1.7;
-
-  &--panorama {
-    order: 2;
-  }
+  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     min-height: 48px;
@@ -153,18 +162,33 @@
 
   @media (min-width: $desktop-width) {
     min-height: 50px;
-    padding-bottom: 10px;
+    margin-bottom: 11px;
+    padding-bottom: 0;
+  }
+
+  &--panorama {
+    order: 2;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 23px;
+      min-height: auto;
+    }
   }
 }
 
 .user-gallery-item__comment-likes {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 15px;
+  gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+  }
 
   &--panorama {
-    order: 1;
+    @media (min-width: $tablet-width) {
+      order: 1;
+    }
   }
 }
 

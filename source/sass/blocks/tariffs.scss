@@ -1,24 +1,24 @@
 .tariffs {
   background-color: $silver;
   background-image: linear-gradient(176deg, white 10%, transparent 10%);
-  padding-top: 135px;
-  padding-bottom: 50px;
+  padding-top: 134px;
+  padding-bottom: 45px;
 
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(176deg, white 13%, transparent 13%);
     padding-top: 110px;
-    padding-bottom: 80px;
+    padding-bottom: 66px;
   }
 
   @media (min-width: $desktop-width) {
     background-image: linear-gradient(176deg, white 15%, transparent 15%);
-    padding-top: 160px;
-    padding-bottom: 90px;
+    padding-top: 155px;
+    padding-bottom: 95px;
   }
 }
 
 .tariffs__slider-toggles {
-  margin-top: 45px;
+  margin-top: 38px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -33,7 +33,7 @@
   }
 
   .tariffs__tariffs-table {
-    transform: translateX(-30.5%);
+    transform: translateX(-30.8%);
   }
 }
 
