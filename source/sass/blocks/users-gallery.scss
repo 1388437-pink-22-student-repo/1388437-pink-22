@@ -1,5 +1,5 @@
 .users-gallery {
-  padding-top: 50px;
+  padding-top: 43px;
 
   @media (min-width: $tablet-width) {
     padding-top: 90px;
@@ -30,16 +30,18 @@
 
 .users-gallery__list {
   @include default-list;
-  padding-top: 60px;
+  padding-top: 50px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 77px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr min-content 1fr;
     padding-top: 90px;
+    margin-bottom: 0;
   }
 }

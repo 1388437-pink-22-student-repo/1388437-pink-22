@@ -5,8 +5,14 @@
   justify-content: space-between;
   width: 178px;
 
+  @media (min-width: $tablet-width) {
+    width: 190px;
+    justify-content: start;
+    gap: 8px;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 172px;
+    gap: 6px;
   }
 }
 

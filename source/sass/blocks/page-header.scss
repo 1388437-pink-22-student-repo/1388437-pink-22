@@ -1,7 +1,6 @@
 .page-header {
   position: relative;
   color: $white;
-  min-height: 69px;
   background-color: $darkblue;
   background-image: url("../img/bg-intro--mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -37,26 +36,30 @@
 }
 
 .page-header__nav-wrapper {
+  min-height: 66px;
   background-color: rgba($black, 0.3);
 }
 
 .page-header__title {
   @include wrapper;
-  padding-top: 25px;
-  padding-bottom: 45px;
+  padding-top: 27px;
+  padding-bottom: 44px;
   font-weight: 300;
   font-size: 24px;
   line-height: 1.4;
   text-align: center;
+  min-height: 171px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 65px;
-    padding-bottom: 125px;
+    padding-top: 62px;
+    padding-bottom: 55px;
     font-size: 50px;
+    min-height: 330px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 60px;
-    padding-bottom: 80px;
+    padding-top: 57px;
+    padding-bottom: 85px;
+    min-height: 284px;
   }
 }

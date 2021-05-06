@@ -1,5 +1,5 @@
 .user-form {
-  padding-top: 25px;
+  padding-top: 35px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -21,6 +21,7 @@
 .user-form__personality-wrapper {
   @media (min-width: $desktop-width) {
     width: 437px;
+    padding-top: 5px;
   }
 }
 
@@ -31,7 +32,7 @@
 
   @media (min-width: $tablet-width) {
     order: 3;
-    padding-top: 34px;
+    padding-top: 37px;
     padding-bottom: 30px;
     background-color: $white;
   }
@@ -53,6 +54,8 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
+    padding-top: 32px;
+    padding-bottom: 27px;
   }
 }
 
@@ -81,11 +84,12 @@
 
   @media (min-width: $tablet-width) {
     order: 4;
-    padding-top: 34px;
+    padding-top: 35px;
     padding-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 33px;
     width: 100%;
   }
 }
@@ -93,10 +97,7 @@
 .user-form__submit-wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 29px;
-  padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 27px 20px 15px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -104,7 +105,7 @@
     align-items: center;
     order: 5;
     padding: 0;
-    padding-top: 38px;
+    padding-top: 35px;
     padding-bottom: 50px;
   }
 
